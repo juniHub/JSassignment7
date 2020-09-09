@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery UI Assignment 7</title>
+	
+	<link rel="stylesheet" href="Asgn7.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="Asgn7.js"></script>
+
+</head>
+
+<body>
+	<h1>Health Care Exchange - First Draft</h1>
+
+	<div id="tabs">
+		<ul>
+		<li><a href="#tabs-1">Sign Up</a></li>
+		<li><a href="#tabs-2">Pick a Plan</a></li>
+		<li><a href="#tabs-3">How do you Feel?</a></li>
+		</ul>
+
+		<div id="tabs-1">
+			<header>
+			<h2 class="headcolor">Sign Up</h2>
+		    </header>
+		
+			<main>
+			    <form id="myform">
+			
+				<p>First Name: <br><input type="text" id="firstname" size="30"> <span id="firstname_error"></span></p>
+				
+				<p>Last Name: <br><input type="text" id="lastname" size="30"> <span id="lastname_error"></span></p>
+				
+				<p>Start Date: <br><input type="text" id="datepicker" size="15"> <span id="datepicker_error"></span></p>
+				
+				<p><input type="button" id="mybutton" value="Create an Account">
+				
+			    </form>
+			
+			    <p id="mymsg"></p>
+			</main>
+		</div>
+
+		<div id="tabs-2">
+			<div id="Great" class="ui-widget-content, draggable">
+				<p>Great Plan!</p>
+			</div>
+			
+			<div id="Poor" class="ui-widget-content, draggable">
+				<p>Poor Plan!</p>
+			</div>
+
+			<div id="droppable" class="ui-widget-header">
+				<p>Drop your plan here</p>
+			</div>
+		</div>
+
+		<div id="tabs-3">
+			<p><input type="button" id="button" value="Show My Feelings"></p>
+
+			<div id="effect" class="ui-widget-content ui-corner-all">
+				<p id="mypara">
+					How do you feel now?
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
